@@ -1081,9 +1081,8 @@ img {
 }
 
 .service-slider li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 300px;
+  padding-bottom: 135px;
 }
 
 .service-slider li:nth-child(1) {
@@ -1093,14 +1092,12 @@ img {
 }
 
 .service-slider li:nth-child(2) {
-  display: none;
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .service-slider li:nth-child(3) {
-  display: none;
   position: relative;
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
@@ -1139,7 +1136,6 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 80px;
-  margin-bottom: 135px;
 }
 
 .guarantee-text p {
@@ -1159,7 +1155,6 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 80px;
-  margin-bottom: 135px;
 }
 
 .credit-text p {
@@ -3020,4 +3015,12 @@ fieldset legend {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
